@@ -1,0 +1,10 @@
+Package: ncbiRtools
+Title: Tools for searching and retrieving data from NCBI sequence databases
+Version: 0.1
+Authors@R: person("Lizandro N. Peraza-Flores", email = "lizandropf@gmail.com", role= c("aut", "cre"))
+Description: Tools for searching and retrieving data from NCBI sequence databases.
+Depends: R (>= 3.3.0), curl
+License: GPL
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
