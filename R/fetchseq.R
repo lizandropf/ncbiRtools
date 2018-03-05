@@ -25,8 +25,8 @@ fetchseq <- function(ids, db="nuccore", rettype="fasta", retmode="text"){
     }
     close(c.file)
     b_time <- Sys.time()
-    if (b_time - a_time > 5){
-      Sys.sleep(10)
+    if (b_time - a_time < 1 && i%%4==0){
+      Sys.sleep(1)
       a_time <- Sys.time()
     }
     setTxtProgressBar(pb, i)
