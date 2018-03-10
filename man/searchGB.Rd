@@ -28,7 +28,7 @@ not include all records this information can be helpful to retrieve all data
 associated to the search term.}
 
 \seealso{
-\code{\link{fetchseq}, \link{read_fasta}, \link{read_gb}, \link{write2fas}}
+\code{\link{fetchseq}, \link{read_fasta}, \link{read_gb}, \link{read_PubMedRec}, \link{write2fas}}
 }
 \examples{
 # load example data:

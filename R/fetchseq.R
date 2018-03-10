@@ -20,6 +20,9 @@ fetchseq <- function(ids, db="nuccore", rettype="fasta", retmode="text"){
     else if(rettype=="gb"){
       id_s[[i]] <- read_gb(c.file)
     }
+    else if (rettype=="docsum" | rettype=="abstract"){
+      id_s[[i]] <- read_PubMedRec(c.file, rettype)
+    }
     else{
       cat("Please select either fasta or gb as rettype, no support for other rettypes")
     }

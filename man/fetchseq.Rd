@@ -18,11 +18,14 @@ fetchseq(ids, db="nuccore", rettype="fasta", retmode="text")
   \item{db}{The database to retrieve sequences from. It uses UIDs or GenBank
   Accession numbers.
   It can be any of available options in NCBI databases. Set to "nuccore" as
-  default.}
+  default. It retrieves data from two databases, genbank (any database) or
+  pubmed.}
   \item{rettype}{either "fasta" or "gb". Set to "fasta" as default (best for
   retrieving data from a vector of UIDs or Accession numbers with known taxa).
   "gb" option retrieves more data information for each sequence (recommended
-  when retrieving data from a search with function searchGB).}
+  when retrieving data from a search with function searchGB).
+  New options added for db="pubmed", either rettype="docsum" for summary records
+  or rettype="abstract" for complete records.}
 }
 
 \references{
@@ -32,11 +35,11 @@ https://ncbi.nlm.nih.gov
 \author{L.N. Peraza-Flores}
 
 \note{Warning for extensive data retrieving: connection to server would be
-interrupted by NCBI. Function offers a 10 seconds delay every 5 minutes of
-data retrieving.}
+interrupted by NCBI. Function offers a 1 seconds delay every 3 records
+retrieved.}
 
 \seealso{
-\code{\link{searchGB}, \link{read_fasta}, \link{read_gb}, \link{write2fas}}
+\code{\link{searchGB}, \link{read_fasta}, \link{read_gb}, \link{read_PubMedRec}, \link{write2fas}}
 }
 \examples{
 # load example data:

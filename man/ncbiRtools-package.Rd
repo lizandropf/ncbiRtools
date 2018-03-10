@@ -8,7 +8,7 @@
 \tabular{ll}{
 Package: \tab ncbiRtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
+Version: \tab 0.2\cr
 Date: \tab 19-02-2018\cr
 License: \tab GPL-2 | GPL-3\cr
 LazyLoad: \tab yes\cr

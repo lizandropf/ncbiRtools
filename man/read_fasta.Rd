@@ -23,7 +23,7 @@ https://ncbi.nlm.nih.gov
 \author{L.N. Peraza-Flores}
 
 \seealso{
-\code{\link{searchGB}, \link{fetchseq}, \link{read_gb}, \link{write2fas}}
+\code{\link{searchGB}, \link{fetchseq}, \link{read_gb}, \link{read_PubMedRec}, \link{write2fas}}
 }
 \examples{
 # load example data:

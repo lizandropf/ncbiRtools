@@ -26,7 +26,7 @@ https://ncbi.nlm.nih.gov
 structure recovered from \code{\link{fetchseq}} or \code{\link{read_gb}}.}
 
 \seealso{
-\code{\link{searchGB}, \link{fetchseq}, \link{read_fasta}, \link{read_gb}}
+\code{\link{searchGB}, \link{fetchseq}, \link{read_fasta}, \link{read_gb}, \link{read_PubMedRec}}
 }
 \examples{
 # load example data:

@@ -24,7 +24,7 @@ https://ncbi.nlm.nih.gov
 \code{\link{fetchseq}}.}
 
 \seealso{
-\code{\link{searchGB},  \link{fetchseq}, \link{read_fasta}, \link{write2fas}}
+\code{\link{searchGB},  \link{fetchseq}, \link{read_fasta}, \link{read_PubMedRec}, \link{write2fas}}
 }
 \examples{
 # load example data:
