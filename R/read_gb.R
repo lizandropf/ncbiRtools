@@ -9,6 +9,6 @@ read_gb <- function(seq.file){
   org.search <- sub(" *ORGANISM *", "", grep("ORGANISM ", seq.file, value=TRUE))
   gb.f <- unlist(strsplit(sub(" *[0-9]* ", "", seq.file[(grep("ORIGIN", seq.file)+1):(grep("//", seq.file)-1)]),""))
   gb.f <- gb.f[gb.f!=" "]
-  attributes(gb.f) <- list(seqlength= sub("^ ", "", grep("[0-9]* bp", locus.search, value=TRUE)), seqtype= locus.search[[4]], PLN= sub("^ PLN ", "", grep(" PLN ", locus.search, value=TRUE)), definition = def.search, accession=sub("^ ", "", grep("[A-Z]{2}[0-9]{4,}", locus.search, value=TRUE)), version= sub("^VERSION *", "", grep("VERSION *[A-Z]{2}[0-9]{4,}.[0-9]{1}", seq.file, value=TRUE)),  species= org.search, class="SeqGb", )
+  attributes(gb.f) <- list(seqlength= sub("^ ", "", grep("[0-9]* bp", locus.search, value=TRUE)), seqtype= locus.search[[4]], PLN= sub("^ PLN ", "", grep(" PLN ", locus.search, value=TRUE)), definition = def.search, accession=sub("^ ", "", grep("[A-Z]{2}[0-9]{4,}", locus.search, value=TRUE)), version= sub("^VERSION *", "", grep("VERSION *[A-Z]{2}[0-9]{4,}.[0-9]{1}", seq.file, value=TRUE)),  species= org.search, class="SeqGb")
   gb.f
 }
